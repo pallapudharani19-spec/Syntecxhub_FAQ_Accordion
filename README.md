@@ -19,7 +19,7 @@ Only one question opens at a time, keeping the interface clean and user-friendly
 
 ## 🌐 Live Project
 You can view the live project here:  
-👉 
+👉  https://pallapudharani19-spec.github.io/Syntecxhub_FAQ_Accordion/
 
 ## 🎓 Internship Details
 - Internship: Syntecxhub
