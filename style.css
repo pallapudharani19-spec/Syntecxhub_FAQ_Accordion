@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #f4f6f8;
+    padding: 40px 10px;
+}
+
+/* FAQ card */
+.faq-container {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;              /* ✅ centers the box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Each FAQ item */
+.faq-item {
+    display: block;            /* ✅ force vertical layout */
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+/* Question row */
+.faq-question {
+    display: flex;             /* only question row is flex */
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Icon */
+.icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Answer (hidden by default) */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    color: #555;
+}
+
+/* When active */
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
